@@ -113,12 +113,12 @@
   }
 
   .section-heading {
-    @apply text-2xl md:text-3xl font-bold mb-6 flex items-center;
+    @apply text-2xl md:text-3xl font-bold mb-6 flex items-center text-portfolio-navy dark:text-portfolio-lightestSlate;
   }
 
   .section-heading::after {
     content: '';
-    @apply ml-4 h-px bg-portfolio-lightestNavy flex-grow;
+    @apply ml-4 h-px bg-portfolio-lightNavy flex-grow;
   }
 
   .timeline-connector {

@@ -12,7 +12,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <section id="projects" className="section-padding bg-blue-50 dark:bg-portfolio-navy">
       <div className="max-w-5xl mx-auto">
-        <h2 className="section-heading text-portfolio-navy dark:text-portfolio-lightestSlate">Projects</h2>
+        <h2 className="section-heading">Projects</h2>
         
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioData.projects.map((project, index) => (
