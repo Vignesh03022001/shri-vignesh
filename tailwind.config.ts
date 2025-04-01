@@ -54,14 +54,14 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				portfolio: {
-				  navy: '#0a192f',
-				  lightNavy: '#112240',
-				  lightestNavy: '#233554',
-				  slate: '#8892b0',
-				  lightSlate: '#a8b2d1',
-				  lightestSlate: '#ccd6f6',
-				  white: '#e6f1ff',
-				  highlight: '#64ffda'
+				  navy: '#1E3A8A',           // Deep blue
+				  lightNavy: '#2563EB',      // Medium blue
+				  lightestNavy: '#3B82F6',   // Lighter blue
+				  slate: '#64748B',          // Slate gray
+				  lightSlate: '#94A3B8',     // Light slate
+				  lightestSlate: '#E2E8F0',  // Lightest slate
+				  white: '#F8FAFC',          // Off-white
+				  highlight: '#38BDF8'       // Light blue highlight
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',

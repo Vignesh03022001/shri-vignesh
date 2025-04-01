@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { usePortfolio } from '../contexts/PortfolioContext';
 import { ExternalLink, Github, Calendar } from 'lucide-react';
@@ -9,23 +10,23 @@ const ProjectsSection: React.FC = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   return (
-    <section id="projects" className="section-padding bg-gray-50 dark:bg-portfolio-lightNavy">
+    <section id="projects" className="section-padding bg-blue-50 dark:bg-portfolio-navy">
       <div className="max-w-5xl mx-auto">
-        <h2 className="section-heading text-portfolio-lightestSlate">Projects</h2>
+        <h2 className="section-heading text-portfolio-navy dark:text-portfolio-lightestSlate">Projects</h2>
         
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
           {portfolioData.projects.map((project, index) => (
             <Card 
               key={index}
-              className={`bg-white dark:bg-portfolio-navy border-slate-200 dark:border-portfolio-lightNavy overflow-hidden transition-all duration-300 ${
-                hoveredProject === index ? 'transform -translate-y-2 shadow-xl' : 'shadow-md'
+              className={`bg-white dark:bg-portfolio-navy border-blue-100 dark:border-portfolio-lightNavy overflow-hidden transition-all duration-300 ${
+                hoveredProject === index ? 'transform -translate-y-2 shadow-xl shadow-blue-100 dark:shadow-portfolio-navy/40' : 'shadow-md'
               }`}
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
             >
               <CardHeader>
                 <div className="flex justify-between items-start">
-                  <CardTitle className="text-portfolio-lightestSlate">{project.title}</CardTitle>
+                  <CardTitle className="text-portfolio-navy dark:text-portfolio-lightestSlate">{project.title}</CardTitle>
                   <div className="flex space-x-3 text-portfolio-slate">
                     <a 
                       href={project.repoLink} 
@@ -58,7 +59,7 @@ const ProjectsSection: React.FC = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {project.technologiesUsed.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="secondary" className="bg-portfolio-lightNavy/20 text-portfolio-lightSlate">
+                    <Badge key={techIndex} variant="secondary" className="bg-blue-100 dark:bg-portfolio-lightNavy/20 text-portfolio-lightNavy dark:text-portfolio-lightSlate">
                       {tech}
                     </Badge>
                   ))}
