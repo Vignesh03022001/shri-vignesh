@@ -37,18 +37,18 @@ const Header: React.FC = () => {
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-white/90 shadow-md dark:bg-portfolio-navy/90 backdrop-blur-sm' 
-          : 'bg-transparent'
+          ? 'bg-portfolio-navy/95 shadow-md dark:bg-portfolio-navy/95 backdrop-blur-sm' 
+          : 'bg-portfolio-navy/80 backdrop-blur-sm'
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="text-portfolio-highlight font-bold text-xl">
-          {portfolioData.name.split(' ')[0]} <span className="text-portfolio-lightSlate">.dev</span>
+          {portfolioData.name.split(' ')[0]} <span className="text-portfolio-lightestSlate">.dev</span>
         </div>
         
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-portfolio-lightSlate hover:text-portfolio-highlight transition-colors"
+          className="md:hidden text-portfolio-lightestSlate hover:text-portfolio-highlight transition-colors"
           onClick={toggleMenu}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -56,25 +56,25 @@ const Header: React.FC = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-6">
-          <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
-          <button onClick={() => scrollToSection('experience')} className="nav-link">Experience</button>
-          <button onClick={() => scrollToSection('education')} className="nav-link">Education</button>
-          <button onClick={() => scrollToSection('skills')} className="nav-link">Skills</button>
-          <button onClick={() => scrollToSection('projects')} className="nav-link">Projects</button>
-          <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
+          <button onClick={() => scrollToSection('about')} className="nav-link text-portfolio-lightestSlate">About</button>
+          <button onClick={() => scrollToSection('experience')} className="nav-link text-portfolio-lightestSlate">Experience</button>
+          <button onClick={() => scrollToSection('education')} className="nav-link text-portfolio-lightestSlate">Education</button>
+          <button onClick={() => scrollToSection('skills')} className="nav-link text-portfolio-lightestSlate">Skills</button>
+          <button onClick={() => scrollToSection('projects')} className="nav-link text-portfolio-lightestSlate">Projects</button>
+          <button onClick={() => scrollToSection('contact')} className="nav-link text-portfolio-lightestSlate">Contact</button>
         </nav>
       </div>
       
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-white dark:bg-portfolio-navy pt-20 px-4 z-40 flex flex-col items-center">
+        <div className="md:hidden fixed inset-0 bg-portfolio-navy pt-20 px-4 z-40 flex flex-col items-center">
           <nav className="flex flex-col items-center space-y-6 text-lg w-full">
-            <button onClick={() => scrollToSection('about')} className="nav-link w-full text-center py-3">About</button>
-            <button onClick={() => scrollToSection('experience')} className="nav-link w-full text-center py-3">Experience</button>
-            <button onClick={() => scrollToSection('education')} className="nav-link w-full text-center py-3">Education</button>
-            <button onClick={() => scrollToSection('skills')} className="nav-link w-full text-center py-3">Skills</button>
-            <button onClick={() => scrollToSection('projects')} className="nav-link w-full text-center py-3">Projects</button>
-            <button onClick={() => scrollToSection('contact')} className="nav-link w-full text-center py-3">Contact</button>
+            <button onClick={() => scrollToSection('about')} className="nav-link text-portfolio-lightestSlate w-full text-center py-3">About</button>
+            <button onClick={() => scrollToSection('experience')} className="nav-link text-portfolio-lightestSlate w-full text-center py-3">Experience</button>
+            <button onClick={() => scrollToSection('education')} className="nav-link text-portfolio-lightestSlate w-full text-center py-3">Education</button>
+            <button onClick={() => scrollToSection('skills')} className="nav-link text-portfolio-lightestSlate w-full text-center py-3">Skills</button>
+            <button onClick={() => scrollToSection('projects')} className="nav-link text-portfolio-lightestSlate w-full text-center py-3">Projects</button>
+            <button onClick={() => scrollToSection('contact')} className="nav-link text-portfolio-lightestSlate w-full text-center py-3">Contact</button>
           </nav>
         </div>
       )}

@@ -100,7 +100,7 @@
 
 @layer components {
   .nav-link {
-    @apply relative px-2 py-1 text-portfolio-lightSlate hover:text-portfolio-highlight transition-colors duration-300;
+    @apply relative px-2 py-1 text-portfolio-lightestSlate hover:text-portfolio-highlight transition-colors duration-300;
   }
 
   .nav-link::after {
