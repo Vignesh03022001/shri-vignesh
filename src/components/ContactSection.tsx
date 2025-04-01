@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { usePortfolio } from '../contexts/PortfolioContext';
-import { MapPin, Phone, Mail, Linkedin, GitHub, Twitter } from 'lucide-react';
+import { MapPin, Phone, Mail, Linkedin, Github, Twitter } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
   const portfolioData = usePortfolio();
@@ -53,7 +52,7 @@ const ContactSection: React.FC = () => {
                   className="text-portfolio-lightSlate hover:text-portfolio-highlight transition-colors"
                   aria-label="GitHub"
                 >
-                  <GitHub size={22} />
+                  <Github size={22} />
                 </a>
                 <a 
                   href="#" 

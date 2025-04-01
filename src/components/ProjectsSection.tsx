@@ -1,7 +1,6 @@
-
 import React, { useState } from 'react';
 import { usePortfolio } from '../contexts/PortfolioContext';
-import { ExternalLink, GitHub, Calendar } from 'lucide-react';
+import { ExternalLink, Github, Calendar } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
@@ -34,7 +33,7 @@ const ProjectsSection: React.FC = () => {
                       rel="noopener noreferrer"
                       className="hover:text-portfolio-highlight transition-colors"
                     >
-                      <GitHub size={20} />
+                      <Github size={20} />
                     </a>
                     {project.liveDemoLink && (
                       <a 
