@@ -9,7 +9,7 @@ const ExperienceSection: React.FC = () => {
   return (
     <section id="experience" className="section-padding">
       <div className="max-w-4xl mx-auto">
-        <h2 className="section-heading text-portfolio-lightestSlate">Work Experience</h2>
+        <h2 className="section-heading">Work Experience</h2>
         
         <div className="relative mt-10">
           <div className="timeline-connector"></div>
@@ -28,7 +28,7 @@ const ExperienceSection: React.FC = () => {
                   <div className="relative">
                     <span className="absolute top-1 left-4 md:left-auto md:right-0 md:translate-x-1/2 w-3 h-3 rounded-full bg-portfolio-highlight"></span>
                   </div>
-                  <h3 className="text-xl font-bold text-portfolio-lightestSlate mt-2">{exp.jobTitle}</h3>
+                  <h3 className="text-xl font-bold text-portfolio-navy dark:text-portfolio-lightestSlate mt-2">{exp.jobTitle}</h3>
                   <h4 className="text-lg font-medium text-portfolio-highlight">{exp.companyName}</h4>
                   <div className="flex items-center text-sm text-portfolio-lightSlate mt-1 mb-2">
                     <Calendar size={14} className="mr-1" />

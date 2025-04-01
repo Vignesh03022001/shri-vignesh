@@ -9,7 +9,7 @@ const EducationSection: React.FC = () => {
   return (
     <section id="education" className="section-padding bg-gray-50 dark:bg-portfolio-lightNavy">
       <div className="max-w-4xl mx-auto">
-        <h2 className="section-heading text-portfolio-lightestSlate">Education</h2>
+        <h2 className="section-heading">Education</h2>
         
         <div className="mt-10 space-y-8">
           {portfolioData.education.map((edu, index) => (
@@ -19,7 +19,7 @@ const EducationSection: React.FC = () => {
                   <GraduationCap className="text-portfolio-highlight" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-portfolio-lightestSlate">{edu.degree}</h3>
+                  <h3 className="text-xl font-bold text-portfolio-navy dark:text-portfolio-lightestSlate">{edu.degree}</h3>
                   <h4 className="text-lg font-medium text-portfolio-highlight mt-1">{edu.institution}</h4>
                   <div className="flex items-center text-sm text-portfolio-lightSlate mt-2">
                     <Calendar size={14} className="mr-1" />

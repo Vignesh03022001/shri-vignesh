@@ -9,7 +9,7 @@ const SkillsSection: React.FC = () => {
   return (
     <section id="skills" className="section-padding">
       <div className="max-w-4xl mx-auto">
-        <h2 className="section-heading text-portfolio-lightestSlate">Skills & Technologies</h2>
+        <h2 className="section-heading">Skills & Technologies</h2>
         
         <div className="mt-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -21,7 +21,7 @@ const SkillsSection: React.FC = () => {
                 <div className="w-10 h-10 rounded-full bg-portfolio-highlight/10 flex items-center justify-center mr-3 group-hover:bg-portfolio-highlight/20 transition-colors">
                   <Check className="text-portfolio-highlight" size={18} />
                 </div>
-                <span className="text-portfolio-lightestSlate font-medium">{skill}</span>
+                <span className="text-portfolio-navy dark:text-portfolio-lightestSlate font-medium">{skill}</span>
               </div>
             ))}
           </div>

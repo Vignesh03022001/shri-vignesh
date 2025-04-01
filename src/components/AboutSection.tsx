@@ -9,7 +9,7 @@ const AboutSection: React.FC = () => {
   return (
     <section id="about" className="section-padding bg-gray-50 dark:bg-portfolio-lightNavy">
       <div className="max-w-4xl mx-auto">
-        <h2 className="section-heading text-portfolio-lightestSlate">About Me</h2>
+        <h2 className="section-heading">About Me</h2>
         <div className="flex flex-col md:flex-row gap-8 mt-8">
           <div className="md:w-2/3">
             <p className="text-lg mb-6 text-portfolio-lightSlate">
@@ -21,7 +21,7 @@ const AboutSection: React.FC = () => {
             </p>
           </div>
           <div className="md:w-1/3 bg-white dark:bg-portfolio-navy p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-4 text-portfolio-lightestSlate">Contact Info</h3>
+            <h3 className="text-xl font-semibold mb-4 text-portfolio-navy dark:text-portfolio-lightestSlate">Contact Info</h3>
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="text-portfolio-highlight mt-1 mr-2" size={18} />
