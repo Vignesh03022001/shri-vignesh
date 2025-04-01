@@ -5,75 +5,122 @@ import { PortfolioData } from '../types';
 // Initial portfolio data
 const portfolioData: PortfolioData = {
   "name": "Shri Vignesh P",
-  "designation": "Software Trainee",
+  "designation": "Full Stack Developer",
   "contact": {
-    "address": "1/104, Gandhi Nagar, Thirumandurai, Perambalur",
-    "phone": "9232392933",
-    "email": "user@gmail.com"
+    "address": "Chennai, Tamil Nadu",
+    "phone": "9500723392",
+    "email": "shrivigneshprasanna@gmail.com",
+    "linkedin": "http://linkedin.com/in/shri-vignesh-p-3503201b9",
+    "github": "https://github.com/Vignesh03022001",
+    "hackerrank": "https://www.hackerrank.com/profile/vignesh03022001"
   },
-  "aboutMe": "A passionate software developer with experience in Java and React.",
+  "aboutMe": "Full Stack Developer experienced in Angular, PostgreSQL, and Java. Skilled in developing scalable web applications, REST APIs, and integrating third-party libraries.",
   "experience": [
     {
-      "jobTitle": "SDE",
-      "companyName": "Google",
-      "location": "Bangalore, India",
-      "workDuration": "Mar 2022 - Present",
+      "jobTitle": "Software Developer",
+      "companyName": "Bahwan Cybertek (Fuel Trans)",
+      "location": "Chennai, Tamil Nadu",
+      "workDuration": "July 2023 - Present",
       "description": [
-        "Developed scalable web applications using React and Java.",
-        "Optimized PostgreSQL queries for better performance."
+        "Developed and maintained Angular and Java front-end components for multiple web applications.",
+        "Optimized PostgreSQL queries for efficient data retrieval and reporting.",
+        "Resolved 20-30 application bugs, improving system stability.",
+        "Created interactive dashboards using Apache E-Charts and Chart.js for data visualization."
       ]
     },
     {
-      "jobTitle": "SDE Intern",
-      "companyName": "Google",
-      "location": "Bangalore, India",
-      "workDuration": "Mar 2020 - Feb 2022",
+      "jobTitle": "Software Intern",
+      "companyName": "SidePash",
+      "location": "",
+      "workDuration": "May 2023 - June 2023",
       "description": [
-        "Worked on frontend development with Angular.",
-        "Assisted in backend API development."
+        "Learned DevOps and DevSecOps principles, including security vulnerability scanning.",
+        "Contributed to automated deployments on AWS EC2 using CI/CD pipelines."
+      ]
+    },
+    {
+      "jobTitle": "Software Intern",
+      "companyName": "Habitate Technologies",
+      "location": "Chennai, Tamil Nadu",
+      "workDuration": "Feb 2023 - April 2023",
+      "description": [
+        "Worked on full-stack development using Vue.js, Java Spring Boot, and Redis.",
+        "Integrated APIs with social media platforms using OAuth authentication.",
+        "Implemented data sharding strategies for social media data management."
       ]
     }
   ],
   "education": [
     {
-      "degree": "Bachelor of Engineering in Computer Science",
-      "institution": "XYZ University",
-      "studyDuration": "2018 - 2022"
+      "degree": "Bachelor of Engineering in Production",
+      "institution": "MIT Campus, Anna University",
+      "studyDuration": "Aug 2018 – July 2022"
     }
   ],
   "techAndTools": [
-    "Java",
+    "Angular",
+    "HTML5",
+    "CSS3",
+    "JavaScript",
     "React",
+    "Next.js",
+    "Java",
+    "RESTEasy",
+    "Maven",
+    "JDBC",
     "PostgreSQL",
-    "Spring Boot",
-    "Docker"
+    "PL/pgSQL",
+    "Oracle SQL",
+    "Git",
+    "SVN",
+    "JIRA",
+    "Apache Tomcat",
+    "Linux",
+    "Agile",
+    "AWS",
+    "CI/CD"
   ],
   "projects": [
     {
-      "title": "Portfolio Website",
-      "timeline": "Jan 2024",
+      "title": "Aviation Fueling Management",
+      "timeline": "",
       "technologiesUsed": [
-        "React",
-        "CSS",
-        "Node.js"
+        "Angular",
+        "Java",
+        "PostgreSQL",
+        "Apache Tomcat"
       ],
-      "description": "A personal portfolio showcasing my projects and skills.",
-      "repoLink": "https://github.com/user/portfolio",
-      "liveDemoLink": "https://user.github.io/portfolio"
+      "description": "Developed a full-stack application for aircraft fueling, transaction voucher generation, and fuel stock transfer tracking."
     },
     {
-      "title": "E-commerce Platform",
-      "timeline": "Dec 2023",
+      "title": "Head Office System Management for Fueling",
+      "timeline": "",
       "technologiesUsed": [
-        "Spring Boot",
+        "Angular",
         "PostgreSQL",
+        "Apache E-Charts",
+        "Chart.js"
+      ],
+      "description": "Built a sales performance and fuel stock monitoring system with interactive data visualizations."
+    },
+    {
+      "title": "Fleet Management System",
+      "timeline": "",
+      "technologiesUsed": [
         "Angular"
       ],
-      "description": "Developed an e-commerce platform with user authentication.",
-      "repoLink": "https://github.com/user/ecommerce"
+      "description": "Developed a customer loyalty and vehicle management application for tracking fueling transactions."
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Full Stack Web Development (MERN)",
+      "timeline": "Nov 2022 - Jan 2023",
+      "description": "Gained hands-on experience in MERN stack development."
     }
   ]
-};
+}
+;
 
 // Create context
 const PortfolioContext = createContext<PortfolioData | undefined>(undefined);
