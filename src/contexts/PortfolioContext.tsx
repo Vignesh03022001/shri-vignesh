@@ -90,7 +90,8 @@ const portfolioData: PortfolioData = {
         "PostgreSQL",
         "Apache Tomcat"
       ],
-      "description": "Developed a full-stack application for aircraft fueling, transaction voucher generation, and fuel stock transfer tracking."
+      "description": "Developed a full-stack application for aircraft fueling, transaction voucher generation, and fuel stock transfer tracking.",
+      "repoLink": "#"
     },
     {
       "title": "Head Office System Management for Fueling",
@@ -101,7 +102,8 @@ const portfolioData: PortfolioData = {
         "Apache E-Charts",
         "Chart.js"
       ],
-      "description": "Built a sales performance and fuel stock monitoring system with interactive data visualizations."
+      "description": "Built a sales performance and fuel stock monitoring system with interactive data visualizations.",
+      "repoLink": "#"
     },
     {
       "title": "Fleet Management System",
@@ -109,7 +111,8 @@ const portfolioData: PortfolioData = {
       "technologiesUsed": [
         "Angular"
       ],
-      "description": "Developed a customer loyalty and vehicle management application for tracking fueling transactions."
+      "description": "Developed a customer loyalty and vehicle management application for tracking fueling transactions.",
+      "repoLink": "#"
     }
   ],
   "certifications": [
@@ -119,8 +122,7 @@ const portfolioData: PortfolioData = {
       "description": "Gained hands-on experience in MERN stack development."
     }
   ]
-}
-;
+};
 
 // Create context
 const PortfolioContext = createContext<PortfolioData | undefined>(undefined);

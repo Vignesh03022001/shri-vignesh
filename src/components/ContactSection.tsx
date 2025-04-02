@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { usePortfolio } from '../contexts/PortfolioContext';
-import { MapPin, Phone, Mail, Linkedin, Github, Twitter } from 'lucide-react';
+import { MapPin, Phone, Mail, Linkedin, Github, Award } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
   const portfolioData = usePortfolio();
@@ -42,25 +42,31 @@ const ContactSection: React.FC = () => {
               <h3 className="text-xl font-semibold mb-4 text-portfolio-navy dark:text-portfolio-lightestSlate">Connect</h3>
               <div className="flex space-x-5">
                 <a 
-                  href="#" 
+                  href={portfolioData.contact.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-portfolio-lightSlate hover:text-portfolio-highlight transition-colors"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={22} />
                 </a>
                 <a 
-                  href="#" 
+                  href={portfolioData.contact.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-portfolio-lightSlate hover:text-portfolio-highlight transition-colors"
                   aria-label="GitHub"
                 >
                   <Github size={22} />
                 </a>
                 <a 
-                  href="#" 
+                  href={portfolioData.contact.hackerrank}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-portfolio-lightSlate hover:text-portfolio-highlight transition-colors"
-                  aria-label="Twitter"
+                  aria-label="HackerRank"
                 >
-                  <Twitter size={22} />
+                  <Award size={22} />
                 </a>
               </div>
             </div>

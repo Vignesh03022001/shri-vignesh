@@ -3,6 +3,9 @@ export interface ContactInfo {
   address: string;
   phone: string;
   email: string;
+  linkedin: string;
+  github: string;
+  hackerrank: string;
 }
 
 export interface ExperienceItem {
@@ -24,8 +27,14 @@ export interface ProjectItem {
   timeline: string;
   technologiesUsed: string[];
   description: string;
-  repoLink: string;
+  repoLink?: string;
   liveDemoLink?: string;
+}
+
+export interface CertificationItem {
+  title: string;
+  timeline: string;
+  description: string;
 }
 
 export interface PortfolioData {
@@ -37,4 +46,5 @@ export interface PortfolioData {
   education: EducationItem[];
   techAndTools: string[];
   projects: ProjectItem[];
+  certifications: CertificationItem[];
 }
