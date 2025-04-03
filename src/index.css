@@ -74,7 +74,6 @@
   body {
     @apply bg-background text-foreground;
     scroll-behavior: smooth;
-    overflow-x: hidden;
   }
 
   .section-padding {
@@ -84,7 +83,7 @@
   .staggered-animation > * {
     opacity: 1;
     overflow: hidden;
-    white-space: normal;
+    white-space: nowrap;
     border-right: 2px solid;
     animation: typewriter 6s steps(40, end) infinite, blink 1s step-end infinite;
   }
