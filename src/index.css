@@ -80,6 +80,10 @@
     @apply py-16 px-4 md:px-8 lg:px-16;
   }
 
+  .about-me-hero-section{
+  max-width: 50vw; /* or any desired width */
+  }
+
   .staggered-animation > * {
     opacity: 1;
     overflow: hidden;
@@ -101,7 +105,8 @@
     animation-delay: 2s;
   }
   .staggered-animation > *:nth-child(5) {
-    animation-delay: 2.5s;
+    animation: none;
+    border-right: none;
   }
 }
 
@@ -145,7 +150,8 @@
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {

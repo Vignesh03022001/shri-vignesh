@@ -18,7 +18,7 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMenu = () => {
+  const toggleMenu = () => {    
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -48,8 +48,8 @@ const Header: React.FC = () => {
         
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-portfolio-lightestSlate hover:text-portfolio-highlight transition-colors"
-          onClick={toggleMenu}
+          className="md:hidden text-portfolio-lightestSlate hover:text-portfolio-highlight transition-colors z-40"
+          onClick={()=>toggleMenu()}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -67,8 +67,8 @@ const Header: React.FC = () => {
       
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-portfolio-navy pt-20 px-4 z-40 flex flex-col items-center">
-          <nav className="flex flex-col items-center space-y-6 text-lg w-full">
+        <div className="md:hidden fixed inset-0 pt-20 px-4 flex flex-col items-center">
+          <nav className="flex flex-col items-center space-y-6 text-lg w-full bg-portfolio-navy">
             <button onClick={() => scrollToSection('about')} className="nav-link text-portfolio-lightestSlate w-full text-center py-3">About</button>
             <button onClick={() => scrollToSection('experience')} className="nav-link text-portfolio-lightestSlate w-full text-center py-3">Experience</button>
             <button onClick={() => scrollToSection('education')} className="nav-link text-portfolio-lightestSlate w-full text-center py-3">Education</button>

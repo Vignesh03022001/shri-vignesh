@@ -8,7 +8,7 @@ const AboutSection: React.FC = () => {
 
   return (
     <section id="about" className="section-padding bg-gray-50 dark:bg-portfolio-lightNavy">
-      <div className="max-w-4xl mx-auto">
+      <div className="mx-auto">
         <h2 className="section-heading">About Me</h2>
         <div className="flex flex-col md:flex-row gap-8 mt-8">
           <div className="md:w-2/3">
